@@ -1,6 +1,6 @@
 # OS-API-Project
 
-## There is 8 different API endpoints:
+## There is 6 different API endpoints:
 
 > ## `https://corner-mall.vercel.app/api/auth/signup`
 
@@ -61,31 +61,6 @@ Date: Thu, 24 Nov 2022 20:01:02 GMT
 Content-Length: 42
 
 {"message":"User is updated successfully"}
-```
-
-> ## `https://corner-mall.vercel.app/api/keys/paypal`
-
-**Description:**
-
-This endpoint is used to get client id of PayPal that will used in payments.
-
-**Request:**
-
-```http
-GET /api/keys/paypal HTTP/2
-Host: corner-mall.vercel.app
-Cookie: __Host-next-auth.csrf-token=b813624e1cd219cdc2bef44ab585a57091f448d967e425fb9ef8fd110ee9c21f%7Cfd60862ea8c0556081986601511433ca7fe4ccba76985f8bd941318dd00b0ed9; __Secure-next-auth.callback-url=https%3A%2F%2Fcorner-mall.vercel.app%2Fprofile; __Secure-next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..S9jH9yHQg_6OKOeT.1-WlD6HO0nk6PTvTMpZIrs4_lTldJkJJgcq-h3P9ktIjOfHkYB6_e4rCIhwr-L4OG4KZBfDGntiHdSdgMTtW-npeigo5e7VnFJDQCGOv3hhOJSm4fpn50c-Q8OC-kdnMHlKj3bhsPIrXUYJSvewdA6otBa-UwCx1M8FzX6VfJoBm_UDgmh9Jl7dNOXO7M6ph3Ia3Q9FePQ8lmP_4lBk5xRJ7el_4jtM6U8qEzYQ.o6Koie26bVS6IzntFvPUOg; cart={%22cartItems%22:[]%2C%22shippingAddress%22:{%22fullName%22:%22Mohamed%22%2C%22address%22:%226B%22%2C%22country%22:%22Egypt%22%2C%22city%22:%22Giza%22%2C%22postalCode%22:%2212345%22%2C%22mobileNumber%22:%220123456789%22}%2C%22paymentMethod%22:%22PayPal%22}
-User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0
-Accept: application/json, text/plain, */*
-```
-
-**Response:**
-
-```http
-HTTP/2 200 OK
-Date: Thu, 24 Nov 2022 20:04:36 GMT
-
-ASCbyyHDLndO2UV4YY5qDQNX70j-Fl3cusA17qd29e9DjVi1xkONHR95V5-G28k29aWVyfSIHT1w8UP5
 ```
 
 > ## `https://corner-mall.vercel.app/api/orders`
